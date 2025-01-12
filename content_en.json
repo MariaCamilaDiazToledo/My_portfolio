@@ -1,0 +1,174 @@
+{
+    "intro": {
+        "greeting":"Hello",
+        "whoAmI":"I´m Camila Toledo",
+        "title": "Back-End Developer",
+        "subtitle": "Welcome to my portfolio!",
+        "text":[
+            "Explore a showcase of my creations where",
+            "Innovation and programming expertise meet to",
+            "tackle thrilling technological challenges and",
+            "transform ideas into reality."
+        ],
+        "buttonAboutMe":"About me",
+        "buttonSomeServices":"Some services",
+        "imgIntro":""
+    },
+    "aboutMe": {
+        "name": "Camila Toledo",
+        "occupation":"Developer",
+        "title": "About me",
+        "description1":[
+            "I’ve had the chance to work on challenging  projects that",
+            "pushed me to find creative and practical solutions to real-",
+            "world problems. Through programming, I’ve honed my skills",
+            "in logical thinking, problem-solving, and teamwork—skills",
+            "that I bring to every project I tackle."
+        ],
+        "description2":[
+            "I thrive on continuous learning and growth, combining",
+            "technical excellence with a creative mindset. believe in the",
+            "power of personal development and soft skills, which are",
+            "essential for building strong, collaborative teams and",
+            "delivering impactful solutions."
+        ],
+        "description3":[
+            "Let’s build something amazing together!"
+        ],
+        "buttonWork": "My work and skills",
+        "imgLin":"",
+        "imgEmail":"",
+        "imgGit":"",
+        "imgAboutMe":""
+    },
+    "mission&vision": {
+        "tittle1": "My Purpose",
+        "description1":[
+            "I’ve had the chance to work on challenging  projects that",
+            "pushed me to find creative and practical solutions to real-",
+            "world problems. Through programming, I’ve honed my skills",
+            "in logical thinking, problem-solving, and teamwork—skills",
+            "that I bring to every project I tackle."
+        ],
+        "tittle2":"Developer",
+        "description2":[
+            "To continually embrace and master emerging technologies",
+            "becoming a trusted expert in creating full stack solutions that",
+            "bridge functionality and creativity, transforming ideas into",
+            "impactful digital experiences."
+        ],
+        "imgMisiion":"",
+        "imgVision":""
+    },
+    "principles": {
+        "tittle1": "Principles",
+        "principle1": "Analytical Mindset",
+        "description1":[
+            "Attention to Detail",
+            "Critical Thinking"
+        ],
+        "principle2": "Solution-Oriented",
+        "description2":[
+            "Positive Outlook",
+            "Focus on Results"
+        ],
+        "principle3": "Discipline",
+        "description3":[
+            "Time Management",
+            "Goal Orientation"
+        ],
+        "principle4": "Teamwork",
+        "description4":[
+            "Conflict Resolution",
+            "Communication"
+        ],
+        "principle5": "Adaptability",
+        "description5":[
+            "Openness to Learning",
+            "Resilience"
+        ],
+        "imgPrinciple":""
+    },
+    "services": {
+        "tittle1": "Some Services",
+        "service1": "Web page creation",
+        "description1":[
+            "",
+            ""
+        ],
+        "service2": "Custom Software Development",
+        "description2":[
+            "",
+            ""
+        ],
+        "service3": "Database Design and Development",
+        "description3":[
+            "",
+            ""
+        ],
+        "imgService":""
+    },
+    "projects": {
+        "tittle1": "Projects",
+        "text":[
+            "These examples demonstrate academic work completed in various programming languages.",
+            "To explore more comprehensive projects, kindly visit my GitHub portfolio."
+        ],
+        "project1": "Sentidos Landing Page",
+        "imgProject1":"",
+        "description1":[
+            "",
+            ""
+        ],
+        "project2": "Curando Patitas Program",
+        "imgProject2":"",
+        "description2":[
+            "",
+            ""
+        ],
+        "project3": "Costume Shop Database",
+        "imgProject3":"",
+        "description3":[
+            "",
+            ""
+        ],
+        "project4": "Aloha Parking Program",
+        "imgProject4":"",
+        "description4":[
+            "",
+            ""
+        ],
+        "buttonProjects":"See more projects"
+        
+    },
+    "expertise": {
+        "tittle1": "Expertise",
+        "expertise1": "Python",
+        "imgExpertise1":"",
+        "expertise2": "Html",
+        "imgExpertise2":"",
+        "expertise3": "Css",
+        "imgExpertise3":"",
+        "expertise4": "Javascript",
+        "imgExpertise4":"",
+        "expertise5": "Java",
+        "imgExpertise5":"",
+        "expertise6": "MySQL",
+        "imgExpertise6":"",
+        "expertise7": "React",
+        "imgExpertise7":"",
+        "expertise8": "Git",
+        "imgExpertise8":""
+
+        
+        
+    },
+    "contact": {
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "submitText": "Send"
+    }
+}
