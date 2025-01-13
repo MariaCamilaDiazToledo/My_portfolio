@@ -32,9 +32,8 @@ body{
     position: relative;
     width: 100%;
 }
-/* #Ticono{
-    font-size: 4rem;
-} */
+
+
 .navigation{
     position: fixed;
     width: 5vw;
@@ -119,7 +118,7 @@ body{
     margin-left: 0.5vw;
 }
 .navigation ul li a .icon  ion-icon{
-    font-size: 1.74rem;
+    font-size: 1.8rem;
 }
 .navigation ul li.curriculum{
     margin-top: 20vh;
@@ -139,11 +138,6 @@ body{
 
 
 
-/* .mayus{
-    font-size: 4rem;
-
-} */
-
 .navigation ul li a .title{
     position: relative;
     display: block;
@@ -154,5 +148,22 @@ body{
     white-space: nowrap;
     font-size: 1.12rem;
 }
+
+.image-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; width: 100%; 
+} 
+.hexagon { 
+    max-width: 100%; 
+    height: auto; 
+} 
+.left { 
+    align-self: flex-start; 
+} 
+.right { 
+    align-self: flex-end; 
+}
+
 
 
