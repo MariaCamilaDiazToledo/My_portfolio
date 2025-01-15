@@ -1,8 +1,9 @@
 {
     "intro": {
         "greeting":"Hello",
-        "whoAmI":"I´m Camila Toledo",
-        "title": "Back-End Developer",
+        "whoAmI":"I´m",
+        "name":"Camila Toledo",
+        "title": "Back End Developer",
         "subtitle": "Welcome to my portfolio!",
         "text":[
             "Explore a showcase of my creations where",

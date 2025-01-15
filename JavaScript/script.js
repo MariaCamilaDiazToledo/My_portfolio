@@ -20,6 +20,7 @@ toggle.onclick = function () {
 };
 
 
+
 //Function to load the json according to the selection
 //Funcion para cargar el json segun lo seleccionado 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,11 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'intro':
                     let introHtml = `
                         <section id="intro">
-                            <article>
-                            <p >${data.intro.greeting}</p>
-                            <p >${data.intro.whoAmI}</p>
-                            <h1>${data.intro.title}</h1>
-                            <p>${data.intro.subtitle}</p>
+                            <article id="introText">
+                            <p id="greeting">${data.intro.greeting}</p>
+                            <div class="whoAmI">
+                                <p id="whoAmI">${data.intro.whoAmI}</p>
+                                <p id="name">${data.intro.name}</p>
+                            </div>
+                            
+                            <h1 id="dev">${data.intro.title}</h1>
+                            <div id="text">
+                            <p id="sub">${data.intro.subtitle}</p>
+                            </div>
                     `;
 
                     // Iterate over the `text` array found in the json and add each line
@@ -52,13 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                     introHtml += `
-                            <button>${data.intro.buttonAboutMe}</button>
-                            <button>${data.intro.buttonSomeServices}</button>
+                            <button class="button1">${data.intro.buttonAboutMe}</button>
+                            <button class="button2">${data.intro.buttonSomeServices}</button>
                         </article>    
                     `;
 
                     introHtml += `
-                            <article>
+                            <article id="introImg">
                                 <img src=${data.intro.imgIntro} alt="imgIntro">
                             </article>
                         </section>
@@ -70,32 +77,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'aboutMe':
                     aboutMeHtml = `
                         <section id="aboutMe">
-                            <article> 
-                                <h2>${data.aboutMe.name}</h2>
-                                <h3>${data.aboutMe.occupation}</h3>
+                            <article class="aboutMeImg"> 
+                                <div class="presentation">
+                                    <h2>${data.aboutMe.name}</h2>
+                                    <h3>${data.aboutMe.occupation}</h3>
+                                </div>
+                                <div class="img">
                                 <img src=${data.aboutMe.imgAboutMe} alt="imgAboutMe">
+                                </div>
                             </article>
-                            <article>
+                            <article class="aboutMeText">
                                 <h4>${data.aboutMe.title}</h4>
+                                <div>
                                 ${data.aboutMe.description1.map(line => `<p>${line}</p>`).join('')}
+                                </div>
+                                <div>
                                 ${data.aboutMe.description2.map(line => `<p>${line}</p>`).join('')}
+                                </div>
+                                <div>
                                 ${data.aboutMe.description3.map(line => `<p>${line}</p>`).join('')}
-                                <button>${data.aboutMe.buttonWork}</button>
+                                </div>
+                                <button class="button3" id="MyWork">${data.aboutMe.buttonWork}</button>
                             </article>
                         </section>
                     `;
 
+                    
+
                     missionVisionHtml = `
                     <section id="missionVision">
-                        <article>
+                        <article id="mission">
                         <h4>${data.missionVision.tittle1}</h4>
+                        <div>
                         ${data.missionVision.description1.map(line => `<p>${line}</p>`).join('')}
+                        </div>
                         <img src=${data.missionVision.imgMisiion} alt="imgMisiion">
                         </article>
-                        <article>
+                        <article id="vision">
                         <img src=${data.missionVision.imgVision} alt="imgVision">
                         <h4>${data.missionVision.tittle2}</h4>
+                        <div>
                         ${data.missionVision.description2.map(line => `<p>${line}</p>`).join('')}
+                        </div>
                         </article>
                     </section>
                 `;
@@ -127,7 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 
                     
-                    content.innerHTML = aboutMeHtml + missionVisionHtml + principlesHtml;
+                    content.innerHTML = aboutMeHtml +missionVisionHtml +principlesHtml;
+                    document.getElementById('MyWork').addEventListener('click', () => loadContent('projects'));
+    
+                    
                     break;
                     
                 case 'services':
@@ -268,8 +294,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('#AboutMe').addEventListener('click', () => loadContent('aboutMe'));
     document.getElementById('#Services').addEventListener('click', () => loadContent('services'));
     document.getElementById('#Projects').addEventListener('click', () => loadContent('projects'));
+    
+    
     loadContent('intro');
+    
 });
+
+
 
 
 

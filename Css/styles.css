@@ -21,36 +21,111 @@
     --color_background4: #05262d;
 
 }
+
+/*FONNTS*/
+@font-face {
+    font-family: 'Tittle';
+    src: url('../fonts/Tittles.otf') format('truetype');
+}
+
+/*FONNTS*/
+@font-face {
+    font-family: 'SubText';
+    src: url('../fonts/SubText.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Text';
+    src: url('../fonts/Text.otf') format('truetype');
+}
+
+
+
 body{
-    height:100vh;
+    height:auto;
     overflow-x: hidden;
     width: 100vw;
-    background: linear-gradient(to right, var(--color_background3), var(--color_background4));
+    
+    
     
 }
+
 .header-container{
     position: relative;
     width: 100%;
 }
 
 
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin-left: 7%;
+    
+    background: 
+        url('../images/backgrounds/hexagon1.webp') no-repeat top left,
+        url('../images/backgrounds/hexagon2.webp') no-repeat top right,
+        linear-gradient(to right, var(--color_background1), var(--color_background2));
+    background-size: auto, auto, cover;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+/* Asegúrate de que las secciones ocupen toda la altura necesaria */
+section {
+    width: 100%;
+    padding: 2em;
+    min-height: 100vh; /* Asegúrate de que cada sección ocupe al menos la altura de la pantalla */
+}
+
+
+
+
+.header-container{
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 3;
+}
 .navigation{
     position: fixed;
-    width: 5vw;
+    width: 7vw;
     height: 100%;
     background: linear-gradient(to right, var(--color_background1), var(--color_background2));
     /* border-left: 15px solid var(--color_background1); */
     transition: 0.5s;
     overflow: hidden;
+    
 }
-@media (max-width: 768px) { /* Para pantallas más pequeñas */
+@media (max-width: 775px) { /* Para pantallas más pequeñas */
     .navigation {
-        width: 12vw; /* Ancho responsivo para dispositivos móviles o tablets */
+        width: 10vw; 
+    }
+    .navigation.active{
+        width: 20vw;
+    }
+    .navigation.active .icon{
+        display: none;
+    }
+    .navigation.active li{
+        padding: 1.2vw;
+    }
+    .navigation.active .title{
+        font-size: 2vw;
+        text-align: center;
+        font-family: 'SubText';
     }
 }
 
 .navigation.active{
     width: 18vw;
+    
 }
 
 .toggle{
@@ -77,6 +152,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    
 }
 .navigation ul li {
     position: relative;
@@ -93,7 +169,7 @@ body{
     /* background-color: var(--blanco); */
     filter: drop-shadow(0px 0px 8px var(--flecha));
     text-shadow: 0px 0px 3px var(--flecha); 
-    color: var(--negro);
+    color: var(--blanco);
     /* color: var(--blanco); */
 }
 
@@ -115,7 +191,7 @@ body{
     height:60px ;
     line-height:75px;
     text-align: center;
-    margin-left: 0.5vw;
+    margin-left: 1.5vw;
 }
 .navigation ul li a .icon  ion-icon{
     font-size: 1.8rem;
@@ -128,7 +204,7 @@ body{
 .navigation ul li.curriculum.hovered {
     filter: drop-shadow(0px 0px 8px var(--flecha));
     text-shadow: 0px 0px 3px var(--flecha);
-    color: var(--negro);
+    color: var(--blanco);
 }
 
 .navigation ul li.curriculum a:hover,
@@ -169,15 +245,386 @@ article{
     color: #ffffff;
 }
 
-main{
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 1rem;
+/*INTRO*/
+#intro{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     width: auto;
-    margin-left: 6.8%;
+    padding: 0;
+    
+}
 
-    background: linear-gradient(to right, var(--color_fondo1), var(--color_fondo2));
-    transition:0.5s ;
-    text-align: center;
+/* Artículo del texto */
+#introText {
+    flex: 1; /* Permite que el artículo del texto ocupe el espacio disponible */
+    max-width: 40%; /* Limita el ancho máximo del texto */
+    margin-left: 1vw; /* Espacio entre el texto y la imagen */
+    text-align: left;
+    font-size: 1.5vw;
+    margin-top: 5vw;
+    
+}
+
+#introText, #introText h1, #introText button {
+    margin-bottom: 1rem; /* Añade espacio inferior a cada elemento */
+    
+}
+#introText p, #introText h1, #introText button {
+     /* Añade espacio inferior a cada elemento */
+    font-family: 'Text';
+}
+
+#sub {
+    margin-bottom: 1.8vw;
+}
+#introText p {
+    margin-top: 0.4rem; /* Espacio superior para los párrafos */
+    
+}
+
+#introText h1 {
+    margin-bottom: 3rem; /* Espacio superior para el encabezado */
+}
+
+#introText button {
+    margin-top: 1.5rem; /* Espacio superior para los botones */
+    padding: 0.5rem 1rem; /* Añade padding a los botones para mejor apariencia */
+}
+
+
+#greeting {
+    color: #f6f09c;
+    font-size: 3vw;;
+}
+
+.whoAmI {
+    font-family: 'Tittle';
+    font-size: 4vw;;
+    display: flex;
+    gap: 0.8vw;
+
+}
+
+#name{
+    color: #ffe44b;
+}
+
+#dev {
+    font-size: 2.5vw;
+}
+
+
+.button1 , .button2  {
+    
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5vw;
+}
+
+.button1 {
+    background-color: #eefb03 ;
+    
+}
+
+.button2  {
+    background-color: #a1e3d9;
+    
+}
+.button1:hover,.button2:hover  {
+    filter: drop-shadow(0px 0px 10px var(--flecha));
+}
+/* Artículo de la imagen */
+#introImg {
+    flex: 1; /* Permite que el artículo de la imagen ocupe el espacio disponible */
+    max-width: 60%; /* Limita el ancho máximo de la imagen */
+    margin-right: 0;
+    margin-top: 7.5vw;
+    align-items: flex-end;
+}
+#introImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18%;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    /* Asegura que el gradiente no interfiera con las interacciones */
+    
+}
+
+/* Imagen responsiva */
+#introImg img {
+    max-width: 92%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 55vw;
+    z-index: 100;
+    
+}
+
+/* RESPONSIVE INTRO */
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column; /* Apila los artículos en columnas en lugar de filas */
+        align-items: flex-start; /* Alinea los artículos al inicio en lugar del centro */
+        width: auto;
+    }
+    #introText, #introImg {
+        max-width: 100%; /* Permite que los artículos ocupen el ancho completo */
+        margin-right: 0;
+        margin-bottom: 1rem; /* Espacio entre los artículos apilados */
+    }
+}
+
+/*ABOUT ME*/
+
+#aboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    
+    text-align: left;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+}
+
+.aboutMeImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    
+}
+
+.aboutMeImg img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 32vw;
+}
+
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 35vw;
+    
+}
+
+.presentation h2 {
+    font-family: "Text";
+    font-size: 2.5vw;
+}
+
+.presentation h3 {
+    font-family: "SubText";
+    font-size: 1.9vw;
+    color :#eefb03;
+}
+
+
+
+.aboutMeText{
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que el artículo del texto ocupe el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo del texto */
+    margin-left: 6vw; /* Espacio entre el texto y la imagen */
+    text-align: left;
+    font-size: 1.5vw;
+
+    margin-right: 0vw;
+    justify-content: center;
+    
+    
+}
+
+.aboutMeText::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12%;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    /* Asegura que el gradiente no interfiera con las interacciones */
+    
+}
+
+.aboutMeText::after {
+    content: '';
+    position: absolute;
+    
+    top: 0;
+    right: 49.2vw;
+    width: 12%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    /* Asegura que el gradiente no interfiera con las interacciones */
+}
+.aboutMeText h4 {
+    font-family: "Tittle";
+    color: #a1e3d9;
+    font-size: 5vw;
+}
+.aboutMeText p {
+    font-family: "Text";
+}
+.aboutMeText div {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    z-index: 1;
+}
+
+.button3  {
+    background: linear-gradient(to right, #05323b, #038e9c);
+    color: #b7eff6;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 18px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5vw;
+    font-family: "Text";
+    text-align: center;
+    z-index: 1;  
+}
+
+/*RESPONSIVE ABOUT ME*/
+
+@media (max-width: 768px) {
+    #aboutMe {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        
+    }
+
+    .aboutMeImg {
+        margin-left: 0;
+    }
+
+    .aboutMeImg img {
+        width: 90vw; /* Ajuste de tamaño para pantallas pequeñas */
+    }
+
+    .aboutMeText {
+        max-width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .presentation {
+        padding: 2vw;
+    }
+
+    .presentation h2 {
+        font-size: 4vw;
+    }
+
+    .presentation h3 {
+        font-size: 3vw;
+    }
+
+    .aboutMeText h4 {
+        font-size: 7vw;
+    }
+
+    .aboutMeText p, .aboutMeText div, .button3 {
+        font-size: 3vw;
+    }
+}
+
+/*MISSION AND VISION */
+#missionVision {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+#missionVision h4 {
+    font-family: "Tittle";
+    font-size: 4.5vw;
+    color: #a1e3d9;
+}
+#missionVision p {
+    font-family: "Text";
+    font-size: 1.3vw;
+    color: white;
+    text-align: left;
+}
+
+#missionVision h4, div  {
+    margin-bottom: 2rem; 
+}
+#mission {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 2vw;
+    
+    
+    
+}
+#mission h4 {
+    padding-top: 2vw;
+
+    
+}
+#mission img {
+    padding-top: 1vw;
+    padding-left: 7vw;
+    
+}
+
+#vision {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    align-items: flex-start;
+    justify-content: center;
+    text-align: right;
+}
+
+#vision p {
+    text-align: right;
+    
+}
+
+#vision img {
+    align-self: center;
+    padding-bottom: 2vw;
+}
+
+#vision::after {
+    content: '';
+    position: absolute;
+    right: 37vw;
+    width: 12%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    /* Asegura que el gradiente no interfiera con las interacciones */
 }
