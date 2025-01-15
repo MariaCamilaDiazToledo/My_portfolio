@@ -1,0 +1,177 @@
+{
+    "intro": {
+        "greeting":"Hola",
+        "whoAmI":"Soy Camila Toledo",
+        "title": "Programador Back-End ",
+        "subtitle": "Bienvenido a mi portafolio!",
+        "text":[
+            "Explora una muestra de mis creaciones  donde",
+            "la magia de la programación y la innovación se combinan",
+            "para dar vida a soluciones tecnológicas que enfrentan",
+            "grandes retos y se transforman ideas en realidad."
+        ],
+        "buttonAboutMe":"Sobre Mi",
+        "buttonSomeServices":"Mis Servicios",
+        "imgIntro":"images/main_images/imgIntro.png"
+    },
+    "aboutMe": {
+        "name": "Camila Toledo",
+        "occupation":"Programadora",
+        "title": "Sobre mi ",
+        "description1":[
+            "He tenido el privilegio de trabajar en proyectos desafiantes",
+            "que  me impulsaron a encontrar soluciones creativas y",
+            "prácticas a problemas del mundo real. La programación",
+            "ha fortalecido mi pensamiento lógico, mi capacidad para",
+            "resolver problemas y mi trabajo en equipo, habilidades que",
+            "aplico en cada proyecto que emprendo."
+        ],
+        "description2":[
+            "Me encanta crecer continuamente, combinando",
+            "la excelencia técnica con una mentalidad creativa. ",
+            "Estoy convencida que las habilidades interpersonales son",
+            "clave para construir equipos sólidos y generar soluciones",
+            "de impacto."
+        ],
+        "description3":[
+            "¡Hagamos realidad algo extraordinario juntos!"
+        ],
+        "buttonWork": "Algo de mi trabajo",
+        "imgLin":"",
+        "imgEmail":"",
+        "imgGit":"",
+        "imgAboutMe":"images/main_images/imgAboutMe.png"
+    },
+    "missionVision": {
+        "tittle1": "Mi propósito",
+        "description1":[
+            "Aplicar mi experiencia en desarrollo frontend",
+            "y backend para crear aplicaciones escalables,",
+            "intuitivas y seguras, asegurando una experiencia de",
+            "usuario fluida que combine diseño y funcionalidad,",
+            "todo mientras optimizo el rendimiento al máximo."
+        ],
+        "tittle2":"A dónde me dirijo",
+        "description2":[
+            "Adoptar y dominar de manera constantelas tecnología",
+            "emergentes, convirtiéndonos en un experto confiable en la creación",
+            "de soluciones integrales que combinen funcionalidad y creatividad,",
+            "transformando las ideas en experiencias digitales impactantes."
+        ],
+        "imgMisiion":"images/main_images/imgMission.png",
+        "imgVision":"images/main_images/imgVision.png"
+    },
+    "principles": {
+        "tittle1": "Principios",
+        "principle1": "Mentalidad Analítica",
+        "description1":[
+            "Atención al detalle",
+            "Pensamiento crítico"
+        ],
+        "principle2": "Orientado a soluciones",
+        "description2":[
+            "Perspectiva positiva",
+            "Centrarse en los resultado"
+        ],
+        "principle3": "Disciplina",
+        "description3":[
+            "Gestión del tiempo",
+            "Orientación a objetivo"
+        ],
+        "principle4": "Trabajo en equipo",
+        "description4":[
+            "Resolución de conflicto",
+            "Comunicación"
+        ],
+        "principle5": "Adaptabilidad",
+        "description5":[
+            "OpennApertura al aprendizaje",
+            "Resiliencia"
+        ],
+        "imgPrinciple":""
+    },
+    "services": {
+        "tittle1": "Servicios",
+        "service1": "Cracion de paginas Web",
+        "description1":[
+            "",
+            ""
+        ],
+        "service2": "Desarrollo de software personalizado",
+        "description2":[
+            "",
+            ""
+        ],
+        "service3": "Diseño y desarrollo de bases de datos",
+        "description3":[
+            "",
+            ""
+        ],
+        "imgService1":"",
+        "imgService2":"",
+        "imgService3":""
+    },
+    "projects": {
+        "tittle1": "Proyectos",
+        "text":[
+            "Estos ejemplos muestran proyectos académicos desarrollados en diversos lenguajes",
+            "de programación. Para ver trabajos más completos, visita mi portafolio en GitHub."
+        ],
+        "project1": "Sentidos",
+        "imgProject1":"",
+        "description1":[
+            "",
+            ""
+        ],
+        "project2": "Curando Patitas",
+        "imgProject2":"",
+        "description2":[
+            "",
+            ""
+        ],
+        "project3": "Tienda de disfraces",
+        "imgProject3":"",
+        "description3":[
+            "",
+            ""
+        ],
+        "project4": "Parqueadero Aloha",
+        "imgProject4":"",
+        "description4":[
+            "",
+            ""
+        ],
+        "buttonProjects":"Ver más proyectos"
+        
+    },
+    "expertise": {
+        "tittle1": "Expertise",
+        "expertise1": "Python",
+        "imgExpertise1":"images/logos/python.png",
+        "expertise2": "Html",
+        "imgExpertise2":"images/logos/html.png",
+        "expertise3": "Css",
+        "imgExpertise3":"images/logos/css.png",
+        "expertise4": "Javascript",
+        "imgExpertise4":"images/logos/js.png",
+        "expertise5": "Java",
+        "imgExpertise5":"images/logos/java.png",
+        "expertise6": "MySQL",
+        "imgExpertise6":"images/logos/mySql.png",
+        "expertise7": "React",
+        "imgExpertise7":"images/logos/react.png",
+        "expertise8": "Git",
+        "imgExpertise8":"images/logos/git.png"
+
+        
+        
+    },
+    "contact": {
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "submitText": "Send"
+    }
+}

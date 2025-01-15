@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camila Toledo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Css/styles.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
     <header>
@@ -14,7 +16,7 @@
 					<ion-icon name="menu-outline"></ion-icon>
 				</div>
 				<li>
-					<a id ="#">
+					<a id ="#AboutMe">
 						<span class="icon" id="person">
 							<ion-icon name="person-circle-outline"></ion-icon>
 						</span>
@@ -22,7 +24,7 @@
 					</a>
 				</li>
 				<li>
-					<a id ="#">
+					<a id ="#Services">
 						<span class="icon">
 							<ion-icon name="bag-handle-outline"></ion-icon>
 						</span>
@@ -30,7 +32,7 @@
 					</a>
 				</li>
 				<li>
-					<a id ="#">
+					<a id ="#Projects">
 						<span class="icon">
 							<ion-icon name="file-tray-full-outline"></ion-icon>
 						</span>
@@ -53,6 +55,14 @@
 						<span class="title">Contact</span>
 					</a>
 				</li>
+				<li>
+					<select id="languageSelector">
+						<option value="en">English</option>
+						<option value="sp">Español</option>
+						
+					</select>
+				
+				</li>
 				<li class="curriculum">
 					<a id ="#">
 						<span class="icon">
@@ -61,6 +71,7 @@
 						<span class="title">Curriculum</span>
 					</a>
 				</li>
+				
 			</ul>
 		</nav>
     </header>
@@ -68,19 +79,15 @@
         <img src="images/backgrounds/hexagon1.webp" alt="hexagons" class="hexagon left"> 
         <img src="images/backgrounds/hexagon2.webp" alt="hexagons" class="hexagon right"> 
     </div>
-    <main>
-        
-        <article id="content">
-            <!-- Dynamic content here -->
-        </article>
-        
+    <main id="content">
+        <!-- Dynamic content here -->
     </main>
     
     <footer>
         
     </footer>
     
-    <script src="script.js"></script>
+    <script src="JavaScript/script.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
