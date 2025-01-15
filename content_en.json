@@ -12,7 +12,7 @@
         ],
         "buttonAboutMe":"About me",
         "buttonSomeServices":"Some services",
-        "imgIntro":""
+        "imgIntro":"images/main_images/imgIntro.png"
     },
     "aboutMe": {
         "name": "Camila Toledo",
@@ -39,9 +39,9 @@
         "imgLin":"",
         "imgEmail":"",
         "imgGit":"",
-        "imgAboutMe":""
+        "imgAboutMe":"images/main_images/imgAboutMe.png"
     },
-    "mission&vision": {
+    "missionVision": {
         "tittle1": "My Purpose",
         "description1": [
             "I’ve had the chance to work on challenging  projects that",
@@ -57,8 +57,8 @@
             "bridge functionality and creativity, transforming ideas into",
             "impactful digital experiences."
         ],
-        "imgMisiion":"",
-        "imgVision":""
+        "imgMisiion":"images/main_images/imgMission.png",
+        "imgVision":"images/main_images/imgVision.png"
     },
     "principles": {
         "tittle1": "Principles",
@@ -106,7 +106,9 @@
             "",
             ""
         ],
-        "imgService":""
+        "imgService1":"",
+        "imgService2":"",
+        "imgService3":""
     },
     "projects": {
         "tittle1": "Projects",
@@ -144,21 +146,21 @@
     "expertise": {
         "tittle1": "Expertise",
         "expertise1": "Python",
-        "imgExpertise1":"",
+        "imgExpertise1":"images/logos/python.png",
         "expertise2": "Html",
-        "imgExpertise2":"",
+        "imgExpertise2":"images/logos/html.png",
         "expertise3": "Css",
-        "imgExpertise3":"",
+        "imgExpertise3":"images/logos/css.png",
         "expertise4": "Javascript",
-        "imgExpertise4":"",
+        "imgExpertise4":"images/logos/js.png",
         "expertise5": "Java",
-        "imgExpertise5":"",
+        "imgExpertise5":"images/logos/java.png",
         "expertise6": "MySQL",
-        "imgExpertise6":"",
+        "imgExpertise6":"images/logos/mySql.png",
         "expertise7": "React",
-        "imgExpertise7":"",
+        "imgExpertise7":"images/logos/react.png",
         "expertise8": "Git",
-        "imgExpertise8":""
+        "imgExpertise8":"images/logos/git.png"
 
         
         
