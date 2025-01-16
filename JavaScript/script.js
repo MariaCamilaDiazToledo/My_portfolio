@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                     introHtml += `
-                            <button class="button1">${data.intro.buttonAboutMe}</button>
-                            <button class="button2">${data.intro.buttonSomeServices}</button>
+                            <button class="button1" id="aM">${data.intro.buttonAboutMe}</button>
+                            <button class="button2" id="sS">${data.intro.buttonSomeServices}</button>
                         </article>    
                     `;
 
@@ -72,6 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     `;
 
                     content.innerHTML = introHtml;
+                    document.getElementById('aM').addEventListener('click', () => loadContent('aboutMe'));
+                    document.getElementById('sS').addEventListener('click', () => loadContent('services'));
+    
                     break;
 
                 case 'aboutMe':
@@ -124,24 +127,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                     principlesHtml = `
                     <section id="principles">
-                        <h4>${data.principles.tittle1}</h4>
-                        <article>
+                        <h4 class="head">${data.principles.tittle1}</h4>
+                        <article class="body1">
                         <h5>${data.principles.principle1}</h5>
                         ${data.principles.description1.map(line => `<p>${line}</p>`).join('')}
                         </article>
-                        <article>
+                        <article class="body2">
                         <h5>${data.principles.principle2}</h5>
                         ${data.principles.description2.map(line => `<p>${line}</p>`).join('')}
                         </article>
-                        <article>
+                        <article class="body3">
                         <h5>${data.principles.principle3}</h5>
                         ${data.principles.description3.map(line => `<p>${line}</p>`).join('')}
                         </article>
-                        <article>
+                        <article class="foot1">
                         <h5>${data.principles.principle4}</h5>
                         ${data.principles.description4.map(line => `<p>${line}</p>`).join('')}
                         </article>
-                        <article>
+                        <article class="foot3">
                         <h5>${data.principles.principle5}</h5>
                         ${data.principles.description5.map(line => `<p>${line}</p>`).join('')}
                         </article>
@@ -159,97 +162,130 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'services':
                     servicesHtml = `
                         <section id="services">
-                            <article>
+                            
                                 <h4>${data.services.tittle1}</h4>
-                            </article>
+                            
                             <article>
                                 <div>
                                     <img src=${data.services.imgService1} alt="imgService1">
                                     <h3>${data.services.service1}</h3>
-                                    ${data.services.description1.map(line => `<p>${line}</p>`).join('')}
+                                    <button class="button5" id="MyProjects">
+                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
+                                        ${data.services.buttonInfo}
+                                    </a>
+                                    </button>
                                 </div>
                                 <div>
                                     <img src=${data.services.imgService2} alt="imgService1">
                                     <h3>${data.services.service2}</h3>
-                                    ${data.services.description2.map(line => `<p>${line}</p>`).join('')}
+                                    <button class="button5" id="MyProjects">
+                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
+                                        ${data.services.buttonInfo}
+                                    </a>
+                                    </button>
                                 </div>
                                 <div>
                                     <img src=${data.services.imgService3} alt="imgService1">
                                     <h3>${data.services.service3}</h3>
-                                    ${data.services.description3.map(line => `<p>${line}</p>`).join('')}
+                                    <button class="button5" id="MyProjects">
+                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
+                                        ${data.services.buttonInfo}
+                                    </a>
+                                    </button>
                                 </div>
                             </article>
+                            <button class="button6" id="project">
+                                    
+                                    ${data.services.buttonProject}
+                                    
+                            </button>
                         </section>
                     `;
                     content.innerHTML = servicesHtml;
+                    document.getElementById('project').addEventListener('click', () => loadContent('projects'));
+    
                     break;
 
                 case 'projects':
                     projectsHtml = `
                         <section id="projects">
-                            <article> 
-                                <h3>${data.projects.tittle1}</h3>
+                            
+                                <h3 class="head3">${data.projects.tittle1}</h3>
+                                <div class="text">
                                 ${data.projects.text.map(line => `<p>${line}</p>`).join('')}
-                            </article>
-                            <article>
-                                <div>
+                                </div>
+
+                                <article class="projects-grid">
+                            
+                                <div class="project1">
                                     <img src=${data.projects.imgProject1} alt="imgProject1">
                                     <h4>${data.projects.project1}</h4>
-                                    ${data.projects.description1.map(line => `<p>${line}</p>`).join('')}
+                                    ${data.projects.description1.map(line => `<p class="text1">${line}</p>`).join('')}
                                 </div>
-                                <div>
+                                <div class="project2">
                                     <img src=${data.projects.imgProject2} alt="imgProject1">
                                     <h4>${data.projects.project2}</h4>
-                                    ${data.projects.description2.map(line => `<p>${line}</p>`).join('')}
+                                    ${data.projects.description2.map(line => `<p class="text1">${line}</p>`).join('')}
                                 </div>
-                                <div>
+                                <div class="project3">
                                     <img src=${data.projects.imgProject3} alt="imgProject1">
                                     <h4>${data.projects.project3}</h4>
-                                    ${data.projects.description3.map(line => `<p>${line}</p>`).join('')}
+                                    ${data.projects.description3.map(line => `<p class="text1">${line}</p>`).join('')}
                                 </div>
-                            </article>
+                                </article>
+
+                                
+                                <button class="button4" id="MyProjects">
+                                    <a href="https://github.com/CamilaDiazToledo?tab=repositories" target="_blank" style="text-decoration: none; color: inherit;">
+                                        ${data.projects.buttonProjects}
+                                    </a>
+                                </button>
+
+
+
+
+                                
                         </section>
                     `;
 
                     expertiseHtml = `
                         <section id="expertise">
-                            <article>
-                                <h4>${data.expertise.tittle1}</h4>
-                            </article>
-                            <article>
-                                <div>
+                            
+                                <h4 class="head2">${data.expertise.tittle1}</h4>
+                            
+                                <div class="body4">
                                     <img src=${data.expertise.imgExpertise1} alt="Python">
-                                    <h4>${data.expertise.expertise1}</h4>
+                                    <h5>${data.expertise.expertise1}</h5>
                                 </div>
-                                <div>
+                                <div class="body5">
                                     <img src=${data.expertise.imgExpertise2} alt="Html">
-                                    <h4>${data.expertise.expertise2}</h4>
+                                    <h5>${data.expertise.expertise2}</h5>
                                 </div>
-                                <div>
+                                <div class="body6">
                                     <img src=${data.expertise.imgExpertise3} alt="Css">
-                                    <h4>${data.expertise.expertise3}</h4>
+                                    <h5>${data.expertise.expertise3}</h5>
                                 </div>
-                                <div>
+                                <div class="body7">
                                     <img src=${data.expertise.imgExpertise4} alt="Javascript">
-                                    <h4>${data.expertise.expertise4}</h4>
+                                    <h5>${data.expertise.expertise4}</h5>
                                 </div>
-                                <div>
+                                <div class="foot4">
                                     <img src=${data.expertise.imgExpertise5} alt="Java">
-                                    <h4>${data.expertise.expertise5}</h4>
+                                    <h5>${data.expertise.expertise5}</h5>
                                 </div>
-                                <div>
+                                <div class="foot5">
                                     <img src=${data.expertise.imgExpertise6} alt="MySQL">
-                                    <h4>${data.expertise.expertise6}</h4>
+                                    <h5>${data.expertise.expertise6}</h5>
                                 </div>
-                                <div>
+                                <div class="foot6">
                                     <img src=${data.expertise.imgExpertise7} alt="React">
-                                    <h4>${data.expertise.expertise7}</h4>
+                                    <h5>${data.expertise.expertise7}</h5>
                                 </div>
-                                <div>
+                                <div class="foot7">
                                     <img src=${data.expertise.imgExpertise8} alt="Git">
-                                    <h4>${data.expertise.expertise8}</h4>
+                                    <h5>${data.expertise.expertise8}</h5>
                                 </div>
-                            </article>
+                            
                         </section>
                     `;
 
@@ -291,13 +327,49 @@ document.addEventListener('DOMContentLoaded', () => {
         loadContent('intro');
     });
 
+    document.getElementById('home').addEventListener('click', () => loadContent('intro'));
+
     document.getElementById('#AboutMe').addEventListener('click', () => loadContent('aboutMe'));
     document.getElementById('#Services').addEventListener('click', () => loadContent('services'));
+    
     document.getElementById('#Projects').addEventListener('click', () => loadContent('projects'));
+    
+    
     
     
     loadContent('intro');
     
+});
+
+
+//Curruculum
+
+document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('content');
+    const languageSelector = document.getElementById('languageSelector');
+    let currentLanguage = 'en'; // Idioma por defecto
+    const data = {
+        en: { cv: { doc: 'Cv/Camila_Toledo_Cv_en.pdf' } },
+        sp: { cv: { doc: 'Cv/Camila_Toledo_Cv_sp.pdf' } }
+    };
+
+    // Escuchar cambios en el selector de idioma
+    languageSelector.addEventListener('change', (event) => {
+        currentLanguage = event.target.value; // Actualiza el idioma seleccionado
+        console.log(`Idioma cambiado a: ${currentLanguage}`);
+    });
+
+    const link = document.getElementById('vitae');
+
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevenir la navegación predeterminada
+    
+        const fileUrl = data[currentLanguage].cv.doc; 
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = 'Curriculum_Vitae_CamilaTiledo.pdf'; // Nombre con el que se descargará
+        a.click();
+    });
 });
 
 
