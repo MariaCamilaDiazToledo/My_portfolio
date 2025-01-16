@@ -93,23 +93,16 @@
     "services": {
         "tittle1": "Some Services",
         "service1": "Web page creation",
-        "description1":[
-            "",
-            ""
-        ],
+        
         "service2": "Custom Software Development",
-        "description2":[
-            "",
-            ""
-        ],
+        
         "service3": "Database Design and Development",
-        "description3":[
-            "",
-            ""
-        ],
-        "imgService1":"",
-        "imgService2":"",
-        "imgService3":""
+        
+        "imgService1":"images/services/pw.png",
+        "imgService2":"images/services/s.png",
+        "imgService3":"images/services/db.png",
+        "buttonInfo":"More Info",
+        "buttonProject":"Some Project"
     },
     "projects": {
         "tittle1": "Projects",
@@ -118,19 +111,19 @@
             "To explore more comprehensive projects, kindly visit my GitHub portfolio."
         ],
         "project1": "Sentidos Landing Page",
-        "imgProject1":"",
+        "imgProject1":"images/projects/sentidosimg.png",
         "description1":[
             "",
             ""
         ],
         "project2": "Curando Patitas Program",
-        "imgProject2":"",
+        "imgProject2":"images/projects/perro.png",
         "description2":[
             "",
             ""
         ],
-        "project3": "Costume Shop Database",
-        "imgProject3":"",
+        "project3": "Coco Database",
+        "imgProject3":"images/projects/coco.png",
         "description3":[
             "",
             ""
@@ -165,6 +158,9 @@
 
         
         
+    },
+    "cv":{
+        "doc":"Cv/Camila_Toledo_Cv_en.pdf"
     },
     "contact": {
         "form": {

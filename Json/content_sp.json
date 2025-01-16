@@ -94,23 +94,16 @@
     "services": {
         "tittle1": "Servicios",
         "service1": "Cracion de paginas Web",
-        "description1":[
-            "",
-            ""
-        ],
+        
         "service2": "Desarrollo de software personalizado",
-        "description2":[
-            "",
-            ""
-        ],
+        
         "service3": "Diseño y desarrollo de bases de datos",
-        "description3":[
-            "",
-            ""
-        ],
-        "imgService1":"",
-        "imgService2":"",
-        "imgService3":""
+        
+        "imgService1":"images/services/pw.png",
+        "imgService2":"images/services/s.png",
+        "imgService3":"images/services/db.png",
+        "buttonInfo":"Mas Info",
+        "buttonProject":"Algunos proyectos"
     },
     "projects": {
         "tittle1": "Proyectos",
@@ -119,19 +112,19 @@
             "de programación. Para ver trabajos más completos, visita mi portafolio en GitHub."
         ],
         "project1": "Sentidos",
-        "imgProject1":"",
+        "imgProject1":"images/projects/sentidosimg.png",
         "description1":[
             "",
             ""
         ],
         "project2": "Curando Patitas",
-        "imgProject2":"",
+        "imgProject2":"images/projects/perro.png",
         "description2":[
             "",
             ""
         ],
-        "project3": "Tienda de disfraces",
-        "imgProject3":"",
+        "project3": "Coco Base de datos",
+        "imgProject3":"images/projects/coco.png",
         "description3":[
             "",
             ""
@@ -166,6 +159,9 @@
 
         
         
+    },
+    "cv":{
+        "doc":"Cv/Camila_Toledo_Cv_sp.pdf"
     },
     "contact": {
         "form": {

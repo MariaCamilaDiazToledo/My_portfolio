@@ -628,3 +628,415 @@ article{
     pointer-events: none;
     /* Asegura que el gradiente no interfiera con las interacciones */
 }
+
+/* --------PRINCIPLESS--------PRINCIPLESS--------PRINCIPLESS */
+
+
+#principles{
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr; /* 3 columnas de igual tamaño */
+    grid-template-rows: auto auto auto; /* 3 filas de altura automática */
+    grid-template-areas: 
+        "head head head"
+        "body1 body2 body3"
+        "foot1 foot2 foot3"; 
+    gap: 1vw;  
+    width: 95vw;
+    height: 80vh;
+    align-items: start;
+    transition: 2.5s;
+    /* margin-left: 2vw;
+    margin-right: 2vw; */
+}
+
+#principles p{
+    color: var(--blanco);
+    font-size: 1.2vw;
+    transition: 2.5s;
+}
+
+.head {
+    grid-area: head;
+    padding: 0px;
+    font-family: "Tittle";
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    color: #eefb03 ;
+    
+}
+
+.body1 {
+    grid-area: body1;
+    padding: 0px;
+    text-align: center;
+    
+    transition: 2.5s;
+}
+.body1 h5, .body2 h5, .body3 h5, .foot1 h5, .foot3 h5 {
+    color: #a1e3d9;
+    
+    margin-bottom: 1.1vh;
+    font-size: 3vw;
+    font-family: "Text";
+    transition: 2.5s;
+}
+
+.body1 p, .body2 p, .body3 p, .foot1 p, .foot3 p {
+    color: white;
+    
+    margin-bottom: 1.1vh;
+    font-size: 3.5vw;
+    font-family: "Text";
+    transition: 2.5s;
+}
+
+.body1 p{
+    display: none;
+
+}
+.body1:hover p{
+    display: grid;
+    transition: 1.5s;
+}
+
+.body2 {
+    grid-area: body2;
+    padding: 0px;
+    text-align: center;
+
+    transition: 2.5s;
+}
+.body2 p{
+    display: none;
+}
+.body2:hover p{
+        display: grid;
+        transition: 2.5s;
+}
+
+.body3 {
+    grid-area: body3;
+    padding: 0px;
+    text-align: center;
+
+    transition: 2.5s;
+}
+.body3 p{
+    display: none;
+}
+.body3:hover p{
+    display: grid;
+    transition: 2.5s;
+}
+.foot1 {
+    grid-area: foot1;
+    padding: 0px;
+    text-align: right;
+
+    transition: 2.5s;
+}
+.foot1 p{
+    display: none;
+    text-align: center;
+}
+.foot1:hover p{
+    display: grid;
+    padding-left: 20vw;
+}
+
+.foot2 {
+    display: none;
+    grid-area: foot2;
+}
+
+.foot3 {
+    grid-area: foot3;
+    padding: 0px;
+    text-align: left;
+    transition: 2.5s;
+}
+.foot3 p{
+    display: none;
+}
+.foot3:hover p{
+    display: grid;
+    text-align: center;
+    padding-right: 18vw;
+}
+
+/* --------PROJECTS--------PROJECTS--------PROJECTS */
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; /* Añadir una fila más para el botón */
+    grid-gap: 2vw;
+    width: 95vw;
+    height: auto;
+    align-items: start;
+}
+
+#projects .button4 {
+    background: linear-gradient(to right, #05323b, #038e9c);
+    color: #b7eff6;
+    grid-column: 1 / -1; /* Que ocupe toda la fila */
+    justify-self: center; /* Centrar horizontalmente */
+    margin-top: 2vw; /* Añadir espacio superior */
+    padding: 10px 20px; /* Ajustar tamaño del botón */
+    font-size: 1.5vw;
+    background-color: #a1e3d9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#projects .button4:hover {
+    background-color: #89c2b5;
+}
+
+#projects .button4 a {
+    
+    text-decoration: none;
+    color: white;
+    font-family: "Tittle";
+}
+
+
+#projects .head3 {
+    text-align: left;
+    font-family: "Tittle";
+    color: #a1e3d9;
+    font-size: 6vw;
+    margin-bottom: 1vw;
+    grid-column: 1 / -1; /* Asegúrate de que ocupe toda la fila */
+}
+#projects div img {
+    width: 25vw;
+}
+#projects .text {
+    text-align: left;
+    
+    color: var(--blanco);
+    font-size: 1.2vw; /* Ajusta el tamaño de la fuente según tus necesidades */
+    display: block; /* Asegúrate de que el texto esté configurado para mostrarse */
+    margin-bottom: 1vw; /* Añadir margen inferior para separación */
+    grid-column: 1 / -1;
+}
+
+#projects .text p {
+    font-family: "Text";
+    font-size: 1.7vw;
+}
+
+
+#projects article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    width: 100%;
+}
+
+#projects .project1, 
+#projects .project2, 
+#projects .project3 {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+#projects .project1:hover,
+#projects .project2:hover,
+#projects .project3:hover {
+    transform: scale(1.05);
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#projects h4, 
+#projects .text1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#projects .project1:hover h4, 
+#projects .project1:hover p,
+#projects .project2:hover h4,
+#projects .project2:hover p,
+#projects .project3:hover h4,
+#projects .project3:hover p {
+    display: block;
+    transition: 0.5s;
+}
+
+
+
+/* --------EXPERTISE--------EXPERTISE--------EXPERTISE */
+
+#expertise{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr; /* 3 columnas de igual tamaño */
+    grid-template-rows: auto auto auto auto; /* 3 filas de altura automática */
+    grid-template-areas: 
+        "head2 head2 head2 head2"
+        "body4 body5 body6 body7"
+        "foot4 foot5 foot6 foot7  "; 
+    gap: 1vw;  
+    width: 95vw;
+    height: 80vh;
+    align-items: start;
+    transition: 2.5s;
+    /* margin-left: 2vw;
+    margin-right: 2vw; */
+}
+
+.head2 {
+    grid-area: head2;
+    padding: 0px;
+    font-family: "Tittle";
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    color: #a1e3d9 ;
+    
+}
+
+.body4 h5, .body5 h5, .body6 h5, .body7 h5, .foot4 h5, .foot5 h5,.foot6 h5,.foot7 h5 {
+    color: white;
+    
+    margin-bottom: 1.1vh;
+    font-size: 1.5vw;
+    font-family: "Text";
+    transition: 2.5s;
+}
+
+.body4 img, .body5 img, .body6 img, .body7 img, .foot4 img, .foot5 img,.foot6 img,.foot7 img {
+    width: 12vw;
+}
+
+
+
+
+#services {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    width: 95vw;
+    height: auto;
+    align-items: center;
+}
+
+#services h4 {
+    font-family: "Tittle";
+    font-size: 6em;
+    text-align: left;
+    color: #a8dadc;
+    margin-bottom: 40px;
+    grid-column: 1 / -1;
+}
+
+#services article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, ); /* Ajustar altura mínima */
+    grid-gap: 5vw;
+    width: 100%;
+}
+
+#services article div {
+    background-color: #1a2238;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 255, 0.5); /* Añadir efecto de resplandor */
+    padding: 20px;
+    margin-left: 5vw;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%; /* Permitir que la altura del div se ajuste automáticamente */
+}
+
+#services article div:hover {
+    transform: scale(1.05);
+}
+
+#services article div img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+#services article div h3 {
+    font-size: 2em;
+    color: #a8dadc;
+    margin-bottom: 20px;
+    font-family: "Text";
+}
+
+#services button {
+    font-family: "Text";
+}
+
+.button5 {
+    background-color: #457b9d;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button5:hover {
+    background-color: #1d3557;
+}
+
+.button5 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button6 {
+    background: linear-gradient(to right, #05323b, #038e9c);
+    color: #b7eff6;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.button6:hover {
+    background-color: #1d3557;
+}
+
+#projects {
+    margin-top: 40px;
+}
