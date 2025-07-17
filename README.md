@@ -81,7 +81,7 @@ The navigation bar provides quick access to the main sections of the page:
 For inquiries or further information, feel free to reach out via:
 
 - **Email**: camiditol19@gmail.com
-- **GitHub**: [CamilaDiazToledo](https://github.com/CamilaDiazToledo)
+- **GitHub**: [CamilaDiazToledo](https://github.com/MariaCamilaDiazToledo)
 - **LinkedIn**: [Maria Camila Diaz Toledo](https://linkedin.com/in/camiladiaztoledo)
 - **WhatsApp**: +573232065205
 
