@@ -165,35 +165,72 @@ document.addEventListener('DOMContentLoaded', () => {
                             
                                 <h4>${data.services.tittle1}</h4>
                             
-                            <article>
-                                <div>
-                                    <img src=${data.services.imgService1} alt="imgService1">
-                                    <h3>${data.services.service1}</h3>
-                                    <button class="button5" id="MyProjects">
-                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
-                                        ${data.services.buttonInfo}
-                                    </a>
-                                    </button>
-                                </div>
-                                <div>
-                                    <img src=${data.services.imgService2} alt="imgService1">
-                                    <h3>${data.services.service2}</h3>
-                                    <button class="button5" id="MyProjects">
-                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
-                                        ${data.services.buttonInfo}
-                                    </a>
-                                    </button>
-                                </div>
-                                <div>
-                                    <img src=${data.services.imgService3} alt="imgService1">
-                                    <h3>${data.services.service3}</h3>
-                                    <button class="button5" id="MyProjects">
-                                    <a href="https://wa.me/qr/XRWHS6DSF5UEF1" target="_blank" style="text-decoration: none; color: inherit;">
-                                        ${data.services.buttonInfo}
-                                    </a>
-                                    </button>
-                                </div>
-                            </article>
+                            
+
+                                <article class="container">
+                                    <div class="card__container">
+                                        <article class="card__article">
+                                        <div class="card__scale-1"></div>
+                                        <div class="card__scale-2"></div>
+
+                                        <div class="card__shape-1">
+                                            <div class="card__shape-2"></div>
+                                            <div class="card__shape-3">
+                                                <i class="ri-pages-line card__icon"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__data">
+                                            <h2 class="card__title">${data.services.service1}</h2>
+
+                                            <a href="https://wa.me/qr/XRWHS6DSF5UEF1" class="card__button">
+                                                ${data.services.buttonInfo}
+                                            </a>
+                                        </div>
+                                        </article>
+                            
+                                        <article class="card__article card__orange">
+                                        <div class="card__scale-1"></div>
+                                        <div class="card__scale-2"></div>
+
+                                        <div class="card__shape-1">
+                                            <div class="card__shape-2"></div>
+                                            <div class="card__shape-3">
+                                                <i class="ri-user-5-line card__icon"></i>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card__data">
+                                            <h2 class="card__title">${data.services.service2}</h2>
+                                            <a href="https://wa.me/qr/XRWHS6DSF5UEF1" class="card__button">
+                                                ${data.services.buttonInfo}
+                                            </a>
+                                        </div>
+                                        </article>
+                            
+                                        <article class="card__article card__green">
+                                        <div class="card__scale-1"></div>
+                                        <div class="card__scale-2"></div>
+
+                                        <div class="card__shape-1">
+                                            <div class="card__shape-2"></div>
+                                            <div class="card__shape-3">
+                                                <i class="ri-database-2-line card__icon"></i>
+                                                
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card__data">
+                                            <h2 class="card__title">${data.services.service3}</h2>
+
+                                            <a href="https://wa.me/qr/XRWHS6DSF5UEF1" class="card__button">
+                                                ${data.services.buttonInfo}
+                                            </a>
+                                        </div>
+                                        </article>
+                                    </div>
+                                </article>
+                            
                             <button class="button6" id="project">
                                     
                                     ${data.services.buttonProject}
@@ -208,38 +245,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 case 'projects':
                     projectsHtml = `
-                        <section id="projects">
-                            
-                                <h3 class="head3">${data.projects.tittle1}</h3>
-                                <div class="text">
-                                ${data.projects.text.map(line => `<p>${line}</p>`).join('')}
-                                </div>
+                        <section class="prueba>
 
-                                <article class="projects-grid">
-                            
-                                <div class="project1">
-                                    <img src=${data.projects.imgProject1} alt="imgProject1">
-                                    <h4>${data.projects.project1}</h4>
-                                    ${data.projects.description1.map(line => `<p class="text1">${line}</p>`).join('')}
-                                </div>
-                                <div class="project2">
-                                    <img src=${data.projects.imgProject2} alt="imgProject1">
-                                    <h4>${data.projects.project2}</h4>
-                                    ${data.projects.description2.map(line => `<p class="text1">${line}</p>`).join('')}
-                                </div>
-                                <div class="project3">
-                                    <img src=${data.projects.imgProject3} alt="imgProject1">
-                                    <h4>${data.projects.project3}</h4>
-                                    ${data.projects.description3.map(line => `<p class="text1">${line}</p>`).join('')}
-                                </div>
-                                </article>
+                                <article class="prueba">
+                                    <div class="containerProjects">
 
-                                
-                                <button class="button4" id="MyProjects">
+                                        <div class="slide">
+                                        
+                                            <div class="item item-tittle1"
+                                                style="background-image: url();">
+                                                <div class="content">
+                                                    <div class="name" id="name">${data.projects.tittle1}</div>
+                                                    <div class="des tittle-des">
+                                                    ${data.projects.text.map(line => `<p>${line}</p>`).join('')}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="item"
+                                                style="background-image: url(${data.projects.imgProject2});">
+                                                <div class="content">
+                                                    <div class="name">${data.projects.project2}</div>
+                                                    <div class="des">${data.projects.description2.map(line => `<p class="text1">${line}</p>`).join('')}
+                                                    </div>
+                                                    <button>${data.projects.buttonProject}</button>
+                                                </div>
+                                            </div>
+                                            <div class="item"
+                                                style="background-image: url(${data.projects.imgProject3});">
+                                                <div class="content">
+                                                    <div class="name">${data.projects.project3}</div>
+                                                    <div class="des">${data.projects.description3.map(line => `<p class="text1">${line}</p>`).join('')}
+                                                    </div>
+                                                    <button>${data.projects.buttonProject}</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="item"
+                                                style="background-image: url(${data.projects.imgProject1});">
+                                                <div class="content">
+                                                    <div class="name">${data.projects.project1}</div>
+                                                    <div class="des">${data.projects.description1.map(line => `<p class="text1">${line}</p>`).join('')}</div>
+                                                    <button>${data.projects.buttonProject}</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="button7">
+                                            <button class="prev"><i class="ri-arrow-left-s-line"></i></button>
+                                            <button class="next"><i class="ri-arrow-right-s-line"></i></button>
+                                                    
+                                                    <button id="button4" id="MyProjects">
                                     <a href="https://github.com/CamilaDiazToledo?tab=repositories" target="_blank" style="text-decoration: none; color: inherit;">
                                         ${data.projects.buttonProjects}
                                     </a>
                                 </button>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+                                
 
 
 
@@ -289,7 +355,34 @@ document.addEventListener('DOMContentLoaded', () => {
                         </section>
                     `;
 
-                    content.innerHTML = projectsHtml + expertiseHtml  ;
+                    content.innerHTML = projectsHtml + expertiseHtml;
+                    const next = document.querySelector('.next');
+                    const prev = document.querySelector('.prev');
+
+                    function updateSlideState() {
+                        const firstItem = document.querySelector('.slide .item:first-child');
+                        const slide = document.querySelector('.slide');
+                        if (!firstItem.classList.contains('item-tittle1')) {
+                            slide.classList.add('item-shifted');
+                        } else {
+                            slide.classList.remove('item-shifted');
+                        }
+                    }
+
+                    if (next && prev) {
+                        next.addEventListener('click', function () {
+                            const items = document.querySelectorAll('.item');
+                            document.querySelector('.slide').appendChild(items[0]);
+                            updateSlideState();
+                        });
+
+                        prev.addEventListener('click', function () {
+                            const items = document.querySelectorAll('.item');
+                            document.querySelector('.slide').prepend(items[items.length - 1]);
+                            updateSlideState();
+                        });
+                    }
+
                     break;
 
                 case 'contact':
